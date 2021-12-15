@@ -623,6 +623,7 @@ AFRAME.GLTFModelPlus.registerComponent("reflection-probe", "reflection-probe", (
   componentData.envMapTexture.flipY = true;
   // Assume texture is always an equirect for now
   componentData.envMapTexture.mapping = THREE.EquirectangularReflectionMapping;
+  console.log(componentName, componentData);
 
   el.setAttribute(componentName, componentData);
 });
